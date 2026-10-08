@@ -35,5 +35,17 @@ public class Lautsprecher
        bluetooth = neuBluetooth;
    }
    
+   public Lautsprecher(String neuHersteller, int neuWatt, boolean neuBluetooth)
+   {
+       setHersteller(neuHersteller);
+       setWatt(neuWatt);
+       setBluetooth(neuBluetooth);
+   }
    
+   public Lautsprecher()
+   {
+       setHersteller("UNKN");
+       setWatt(0);
+       setBluetooth(false);
+   }
 }
