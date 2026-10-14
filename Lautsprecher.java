@@ -4,7 +4,23 @@ public class Lautsprecher
     private int watt;
     private boolean bluetooth;
 
-
+    //constructor 
+   public Lautsprecher(String neuHersteller, int neuWatt, boolean neuBluetooth)
+   {
+       setHersteller(neuHersteller);
+       setWatt(neuWatt);
+       setBluetooth(neuBluetooth);
+   }
+   
+   public Lautsprecher()
+   {
+       setHersteller("UNKN");
+       setWatt(0);
+       setBluetooth(false);
+   }
+   
+   
+   // get-methode 
    public String getHersteller()
    {
       return hersteller;
@@ -20,6 +36,8 @@ public class Lautsprecher
        return bluetooth;
    }
    
+   
+   // set-methode
    public void setHersteller(String neuHersteller)
    {
        hersteller = neuHersteller;
@@ -35,17 +53,5 @@ public class Lautsprecher
        bluetooth = neuBluetooth;
    }
    
-   public Lautsprecher(String neuHersteller, int neuWatt, boolean neuBluetooth)
-   {
-       setHersteller(neuHersteller);
-       setWatt(neuWatt);
-       setBluetooth(neuBluetooth);
-   }
    
-   public Lautsprecher()
-   {
-       setHersteller("UNKN");
-       setWatt(0);
-       setBluetooth(false);
-   }
 }
