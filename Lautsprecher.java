@@ -53,5 +53,11 @@ public class Lautsprecher
        bluetooth = neuBluetooth;
    }
    
+   // print-methode 
+   
+   public void printLautsprecher()
+   {
+       System.out.println("Lautsprecher "+hersteller+" - bluetooth: " + bluetooth+" - "+watt+" watt");
+   }
    
 }
