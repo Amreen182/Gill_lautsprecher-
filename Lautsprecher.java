@@ -12,6 +12,21 @@ public class Lautsprecher
        setBluetooth(neuBluetooth);
    }
    
+   public Lautsprecher(String neuHersteller, int neuWatt)
+   {
+       setHersteller(neuHersteller);
+       setWatt(neuWatt);
+       setBluetooth(false);
+   }
+   
+   public Lautsprecher(String neuHersteller)
+   {
+       setHersteller(neuHersteller);
+       setWatt(0);
+       setBluetooth(false);
+   }
+   
+   
    public Lautsprecher()
    {
        setHersteller("UNKN");
@@ -53,11 +68,17 @@ public class Lautsprecher
        bluetooth = neuBluetooth;
    }
    
+   
+   
    // print-methode 
    
    public void printLautsprecher()
    {
        System.out.println("Lautsprecher "+hersteller+" - bluetooth: " + bluetooth+" - "+watt+" watt");
    }
+   
+   
+   
+   
    
 }
