@@ -53,19 +53,20 @@ public class Lautsprecher
    
    
    // set-methode
-   public void setHersteller(String neuHersteller)
+   // add this methode
+   public void setHersteller(String hersteller)
    {
-       hersteller = neuHersteller;
+       this.hersteller = hersteller;
    }
    
-   public void setWatt(int neuWatt)
+   public void setWatt(int watt)
    {
-       watt = neuWatt;
+       this.watt = watt;
    }
    
-   public void setBluetooth(boolean neuBluetooth)
+   public void setBluetooth(boolean bluetooth)
    {
-       bluetooth = neuBluetooth;
+       this.bluetooth = bluetooth;
    }
    
    
