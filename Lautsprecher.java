@@ -72,11 +72,21 @@ public class Lautsprecher
    
    
    // print-methode 
+   // System.out.println("Lautsprecher "+hersteller+" - bluetooth: "+bluetooth+" - " + " - "+watt+" watt");
    
+   // add ifPrint
    public void printLautsprecher()
    {
-       System.out.println("Lautsprecher "+hersteller+" - bluetooth: " + bluetooth+" - "+watt+" watt");
-   }
+     if (bluetooth == true)
+     {
+        System.out.println("Lautsprecher "+hersteller+" - bluetooth - " + " - "+watt+" watt");
+     }
+     else
+     {
+        System.out.println("Lautsprecher "+hersteller+" - no bluetooth - " + " - "+watt+" watt");
+     }
+   
+    }
    
    
    
